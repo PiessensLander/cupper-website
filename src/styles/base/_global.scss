@@ -15,7 +15,7 @@ html {
 }
 
 body {
-	background: $blue;
+	@apply bg-blue-700 dark:bg-neutral-950;
 	min-height: 100%;
 	min-width: var(--min-width);
 	position: relative;

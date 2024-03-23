@@ -1,9 +1,8 @@
 .content {
 	height: calc(100vh - 4rem);
 	padding: 0 1rem 1rem 1rem;
-
 	&__inner {
-		background: white;
+		@apply bg-white dark:bg-neutral-800 text-black dark:text-blue-50 space-y-4;
 		height: 100%;
 		border-radius: 0.5rem;
 		padding: 1rem;
@@ -12,19 +11,15 @@
 		justify-content: flex-end;
 		gap: 0.625rem;
 
-		@include md {
-			padding: 2rem;
+
+		@screen md {
+			@apply p-8
 		}
 
 		h2 {
-			font-size: 2rem;
 			max-width: 450px;
 			span {
-				color: $blue;
-			}
-
-			@include md {
-				font-size: 3rem;
+				@apply text-blue-700 dark:text-blue-400;
 			}
 		}
 	}

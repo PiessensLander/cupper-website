@@ -1,12 +1,14 @@
 ---
 import Layout from '../layouts/Layout.astro';
+import TallyButton from '@/components/TallyButton.astro';
 ---
 
 <Layout>
-	<main class='content'>
+	<main class='content '>
 		<div class='content__inner'>
-			<h2>Find the <span>best coffee in town</span></h2>
+			<h2 class="text-4xl 2xl:text-6xl">Find the <span>best coffee in town</span></h2>
 			<p>Coming soon.</p>
+			<TallyButton client:load />
 		</div>
 	</main>
 </Layout>
